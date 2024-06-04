@@ -5,4 +5,15 @@ const data = fs.readFileSync(path, "utf-8", (err, data) => {
     console.error(err);
   }
 });
-console.log(data);
+const adata = data.split("\r\n");
+const line = adata[0];
+// console.log(adata);
+const sline = line.split(",");
+// console.log(sline);
+function objMake(a, b) {
+  let obj = {};
+  obj = { [a]: b };
+  return obj;
+}
+let test = objMake(sline, "A");
+console.log(test);
