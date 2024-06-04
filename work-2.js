@@ -18,5 +18,7 @@ class workTwo {
     }
   }
 }
-let test = new workTwo(1, "2");
+let test = new workTwo(1, 2);
 console.log(test);
+console.dir(test);
+console.log(test._a + test._b);
