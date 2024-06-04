@@ -23,5 +23,6 @@ class workTwo {
 }
 let test = new workTwo(1, 2);
 console.log(test);
-console.dir(test);
-console.log(test.add());
+// console.dir(test);
+// console.log(test.add());
+console.log(test instanceof workTwo);
