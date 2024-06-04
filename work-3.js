@@ -9,5 +9,9 @@ let itsME = {
   age: "1",
   home: "tree",
   test: this,
+  sentence: function () {
+    return this.name + "배고파";
+  },
 };
-console.dir(itsME.test);
+console.log(itsME);
+console.log(itsME.sentence());
