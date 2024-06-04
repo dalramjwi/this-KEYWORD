@@ -4,8 +4,10 @@ class workTwo {
     this.b = b;
   }
   set a(value) {
-    return (this._a = value);
+    if (typeof value === "number") {
+      return (this._a = value);
+    }
   }
 }
-let test = new workTwo(1, 2);
+let test = new workTwo("1", 2);
 console.log(test);
