@@ -9,5 +9,5 @@ class workTwo {
     }
   }
 }
-let test = new workTwo("1", 2);
+let test = new workTwo(1, 2);
 console.log(test);
